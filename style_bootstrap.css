@@ -1,0 +1,40 @@
+header .nav-images img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.articles .box:first-of-type .icon {
+  color: #0556a6;
+}
+
+.articles .box:last-of-type .icon {
+  color: #888;
+}
+/* Start Arrow __^__ ------------
+--------------------------------- */
+.up-arrow {
+  position: relative;
+  margin: 40px 0;
+}
+.up-arrow::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #bbb;
+}
+.up-arrow::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border: 20px solid transparent;
+  border-bottom-color: #bbb;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/* End Arrow __^__ --------------
+--------------------------------- */
